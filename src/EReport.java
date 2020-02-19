@@ -36,9 +36,38 @@ public class EReport {
 			}
 	    }
 		
+		//Sorting By Employee ID
+		System.out.println("Processing by employee number...");
+		printEmployees(sortByID(employees));
+				
+		
+	}
+
+	/*
+	 * Function prints all the elements in the Arraylist
+	 * @param employees
+	 */
+	protected static void printEmployees(ArrayList<Employee> employees){
 		for(Employee emp : employees) {
 			System.out.println(emp.getID() + "," + emp.getFirstName() + " " + emp.getLastName());
 		}
+	}
+	
+	/**
+	 * Used array sort function to sort Employees 
+	 * by employee ID
+	 * @param arr
+	 * @return
+	 */
+	protected static ArrayList<Employee> sortByID(ArrayList<Employee> arr){
+		arr.sort((Employee e1, Employee e2) -> {
+		   if (e1.getID() > e2.getID())
+			     return 1;
+			   if (e1.getID() < e2.getID())
+			     return -1;
+			   return 0;
+			});
+		return arr;
 	}
 
 }
