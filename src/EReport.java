@@ -3,6 +3,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import Models.Employee;
 
@@ -40,6 +42,10 @@ public class EReport {
 		System.out.println("Processing by employee number...");
 		printEmployees(sortByID(employees));
 				
+		System.out.println();
+		//Sorting by last name
+		System.out.println("Processing by last (family) Name...");
+		printEmployees(sortByLastName(employees));
 		
 	}
 
@@ -70,4 +76,19 @@ public class EReport {
 		return arr;
 	}
 
+	/**
+	 * Used Collections sort method to sort Employees
+	 * by lastName(String) 
+	 * @param arr
+	 * @return
+	 */
+	protected static ArrayList<Employee> sortByLastName(ArrayList<Employee> arr){
+		Collections.sort(arr, new Comparator<Employee>() {  
+			@Override
+			public int compare(Employee e1, Employee e2) { 
+		        return e1.getLastName().compareTo(e2.getLastName());
+			}  
+		});  
+		return arr;
+	}
 }
