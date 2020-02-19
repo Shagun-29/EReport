@@ -7,7 +7,16 @@ Input file format:
 - The data consists of an employee number and employee name separated by a ',' (comma) delimiter
 - The employee name consists of first and last name separated by a ' ' (space) delimiter
 
-#An example of the input text file:
+# About Project
+Eclipse IDE is used to create this project.
+Employee Model is created to store employee information using arraylist.
+
+# How to run this project
+Clone this repository
+Open this project in eclipse or other Java IDE
+EReport in src directory is the main class, compile and run this file.
+
+# An example of the input text file:
 ```
 ###############################################
 #
@@ -20,7 +29,7 @@ Input file format:
 110,Carla Coleman
 ```
 
-#An example of the expected output:
+# An example of the expected output:
 Processing by employee number...
 ```
 101,John Doe
@@ -29,7 +38,7 @@ Processing by employee number...
 104,Joe Public
 110,Carla Coleman
 ```
-#Processing by last (family) Name...
+# Processing by last (family) Name...
 ```
 110,Carla Coleman
 101,John Doe
