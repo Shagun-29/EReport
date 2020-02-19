@@ -8,13 +8,13 @@ Input file format:
 - The employee name consists of first and last name separated by a ' ' (space) delimiter
 
 # About Project
-Eclipse IDE is used to create this project.
-Employee Model is created to store employee information using arraylist.
+- Eclipse IDE is used to create this project.
+- Employee Model is created to store employee information using arraylist.
 
 # How to run this project
-Clone this repository
-Open this project in eclipse or other Java IDE
-EReport in src directory is the main class, compile and run this file.
+- Clone this repository
+- Open this project in eclipse or other Java IDE
+- EReport in src directory is the main class, compile and run this file.
 
 # An example of the input text file:
 ```
